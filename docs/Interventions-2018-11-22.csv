@@ -1,0 +1,120 @@
+﻿Type;Statut;Nom;No;Titre;Scenario;Nb de cycles;Duree;Debut;Fin
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106717;Vider Sainte-Foy vers Saint-Sacrement;;;120;18-11-22 18:06;18-11-22 18:08
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106716;I-1004  Vider la cote St-Sacrement (V-2);;;70;18-11-22 18:03;18-11-22 18:05
+Controleur;Termine;Honore-Mercier/Abraham;106715;Vider Honore-Mercier;;;60;18-11-22 18:00;18-11-22 18:01
+Controleur;Termine;Rene-Levesque Est/Jean-Jacques-Bertrand;106714;Vider R-Levesque;;;60;18-11-22 18:00;18-11-22 18:01
+Controleur;Termine;Rene-Levesque Est/Turnbull;106713;Vider Rene-Levesque secteur Salaberry;;;60;18-11-22 17:58;18-11-22 17:59
+Serveur;Termine;Saint-Sacrement;106712;;Autres heures;;;18-11-22 17:57;18-11-22 18:35
+Controleur;Termine;Rene-Levesque Ouest/Belvedere;106711;Vider Rene-Levesque secteur Belvedere;;;60;18-11-22 17:56;18-11-22 17:57
+Serveur;Termine;Saint-Sacrement;106710;;Autres heures;;;18-11-22 17:56;18-11-22 17:55
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106709;I-1004  Vider la cote St-Sacrement (V-2);;;130;18-11-22 17:52;18-11-22 17:55
+Serveur;Termine;Saint-Sacrement;106708;;Pointe PM;;;18-11-22 17:46;18-11-22 17:50
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106707;I-1004  Vider la cote St-Sacrement (V-2);;;70;18-11-22 17:42;18-11-22 17:43
+Controleur;Termine;Honore-Mercier/Abraham;106706;Vider Honore-Mercier;;;60;18-11-22 17:40;18-11-22 17:41
+Controleur;Termine;Rene-Levesque Est/Jean-Jacques-Bertrand;106705;Vider R-Levesque;;;60;18-11-22 17:40;18-11-22 17:41
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106704;I-1004  Vider la cote St-Sacrement (V-2);;;70;18-11-22 17:40;18-11-22 17:41
+Controleur;Termine;Dalhousie/Saint-Andre;106703;Vider Dalhousie et Quai St-Andre;;;60;18-11-22 17:38;18-11-22 17:39
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106702;I-1004  Vider la cote St-Sacrement (V-2);;;130;18-11-22 17:36;18-11-22 17:38
+Controleur;Termine;Wilfrid-Hamel/Marie-de-l'Incarnation;106701;Vider vers Marie-de-l'incarnation;;;60;18-11-22 17:36;18-11-22 17:37
+Controleur;Termine;Wilfrid-Hamel/Pointe-aux-Lievres;106700;Vider W-Hamel;;;60;18-11-22 17:35;18-11-22 17:36
+Controleur;Termine;Sainte-Foy/De Salaberry;106699;Vider la cote Salaberry vers le Nord;;;60;18-11-22 17:31;18-11-22 17:32
+Controleur;Termine;Sainte-Foy/De Salaberry;106698;Vider la cote Salaberry vers le sud;;;40;18-11-22 17:29;18-11-22 17:29
+Controleur;Termine;Honore-Mercier/Abraham;106697;Vider Honore-Mercier;;;60;18-11-22 17:28;18-11-22 17:29
+Controleur;Termine;Rene-Levesque Est/Jean-Jacques-Bertrand;106696;Vider R-Levesque;;;60;18-11-22 17:28;18-11-22 17:29
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106695;I-1004  Vider la cote St-Sacrement (V-2);;;130;18-11-22 17:26;18-11-22 17:28
+Controleur;Termine;Sainte-Foy/De Salaberry;106694;Vider la cote Salaberry vers le sud;;;40;18-11-22 17:25;18-11-22 17:25
+Controleur;Termine;Dalhousie/Saint-Andre;106693;Vider Dalhousie et Quai St-Andre;;;60;18-11-22 17:25;18-11-22 17:26
+Controleur;Termine;Wilfrid-Hamel/Marie-de-l'Incarnation;106692;Vider vers Marie-de-l'incarnation;;;60;18-11-22 17:22;18-11-22 17:23
+Controleur;Termine;Wilfrid-Hamel/Pointe-aux-Lievres;106691;Vider W-Hamel;;;60;18-11-22 17:22;18-11-22 17:23
+Controleur;Termine;Rene-Levesque Ouest/De Salaberry;106690;Vider avenue Salaberry 2 directions;;;60;18-11-22 17:19;18-11-22 17:20
+Controleur;Termine;Rene-Levesque Est/Jean-Jacques-Bertrand;106689;Vider R-Levesque;;;60;18-11-22 17:19;18-11-22 17:20
+Controleur;Termine;Honore-Mercier/Abraham;106688;Vider Honore-Mercier;;;60;18-11-22 17:19;18-11-22 17:20
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106687;I-1005  Liberer la cote St-Sacrement;;;560;18-11-22 17:18;18-11-22 17:24
+Controleur;Termine;Dalhousie/Saint-Andre;106686;Vider Dalhousie et Quai St-Andre;;;60;18-11-22 17:17;18-11-22 17:18
+Controleur;Termine;Honore-Mercier/Abraham;106685;Vider Cote d'Abraham;;;60;18-11-22 17:15;18-11-22 17:16
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106684;I-1001  Vider Charest Ouest;;;130;18-11-22 17:08;18-11-22 17:11
+Controleur;Termine;Honore-Mercier/Abraham;106683;Vider Cote d'Abraham;;;120;18-11-22 17:07;18-11-22 17:09
+Controleur;Termine;Wilfrid-Hamel/Marie-de-l'Incarnation;106682;Vider vers Marie-de-l'incarnation;;;60;18-11-22 17:04;18-11-22 17:05
+Controleur;Termine;Wilfrid-Hamel/Pointe-aux-Lievres;106681;Vider W-Hamel;;;60;18-11-22 17:03;18-11-22 17:04
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106680;I-1005  Liberer la cote St-Sacrement;;;390;18-11-22 17:02;18-11-22 17:08
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106679;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;40;18-11-22 16:59;18-11-22 16:59
+Controleur;Termine;Honore-Mercier/Abraham;106678;Vider Cote d'Abraham;;;60;18-11-22 16:58;18-11-22 16:59
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106677;I-1001  Vider Charest Ouest;;;130;18-11-22 16:57;18-11-22 16:59
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106676;I-1004  Vider la cote St-Sacrement (V-2);;;130;18-11-22 16:53;18-11-22 16:55
+Controleur;Termine;Laurier/Hopital CHUL (Laurier);106675;Vider Laurier a la tete des ponts;;;130;18-11-22 16:50;18-11-22 16:53
+Controleur;Termine;Honore-Mercier/Abraham;106674;Vider Honore-Mercier;;;60;18-11-22 16:50;18-11-22 16:51
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106673;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;60;18-11-22 16:48;18-11-22 16:49
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106672;I-1001  Vider Charest Ouest;;;130;18-11-22 16:47;18-11-22 16:49
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106671;I-1001  Vider Charest Ouest;;;130;18-11-22 16:40;18-11-22 16:42
+Controleur;Termine;Laurier/Hopital CHUL (Laurier);106670;Vider Laurier a la tete des ponts;;;130;18-11-22 16:37;18-11-22 16:40
+Controleur;Termine;Dalhousie/Saint-Andre;106669;Vider Dalhousie et Quai St-Andre;;;60;18-11-22 16:34;18-11-22 16:35
+Controleur;Termine;Laurier/Robert-Bourassa;106668;Vider Robert-Bourassa vers Laurier;;;60;18-11-22 16:34;18-11-22 16:35
+Controleur;Termine;Wilfrid-Hamel/Marie-de-l'Incarnation;106667;Vider Wilfrid-Hamel Ouest;;;60;18-11-22 16:33;18-11-22 16:34
+Controleur;Termine;Wilfrid-Hamel/Pointe-aux-Lievres;106666;Vider W-Hamel;;;60;18-11-22 16:31;18-11-22 16:32
+Controleur;Termine;Laurier/Lavigerie;106665;Vider Laurier direction Ouest seulement;;;130;18-11-22 16:31;18-11-22 16:33
+Controleur;Termine;Charest Est/Couronne;106664;Vider Charest-E;;;60;18-11-22 16:30;18-11-22 16:31
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106663;I-1005  Liberer la cote St-Sacrement;;;520;18-11-22 16:29;18-11-22 16:38
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106662;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;80;18-11-22 16:28;18-11-22 16:30
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106661;I-1001  Vider Charest Ouest;;;130;18-11-22 16:26;18-11-22 16:28
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106660;I-1004  Vider la cote St-Sacrement (V-2);;;70;18-11-22 16:24;18-11-22 16:25
+Controleur;Termine;Charest Est/Couronne;106659;Vider Charest-E;;;60;18-11-22 16:22;18-11-22 16:23
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106658;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;80;18-11-22 16:20;18-11-22 16:21
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106657;I-1001  Vider Charest Ouest;;;130;18-11-22 16:19;18-11-22 16:21
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106656;Vider R-Bourassa Sud;;;130;18-11-22 16:14;18-11-22 16:16
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106655;Vider R-Bourassa Sud;;;60;18-11-22 16:11;18-11-22 16:12
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106654;I-1001  Vider Charest Ouest;;;130;18-11-22 15:59;18-11-22 16:01
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106653;I-1001  Vider Charest Ouest;;;130;18-11-22 15:48;18-11-22 15:50
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106652;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;30;18-11-22 15:39;18-11-22 15:39
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106651;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;30;18-11-22 15:34;18-11-22 15:35
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106650;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;30;18-11-22 15:28;18-11-22 15:28
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106649;I-1005  Liberer la cote St-Sacrement;;;650;18-11-22 15:26;18-11-22 15:36
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106648;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;30;18-11-22 15:23;18-11-22 15:24
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106647;Vider boulevard Lebourgneuf vers Robert-Bourassa direction Sud;;;30;18-11-22 15:19;18-11-22 15:20
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106646;I-1005  Liberer la cote St-Sacrement;;;650;18-11-22 15:10;18-11-22 15:21
+Controleur;Termine;Laurier/Lavigerie;106645;Vider Laurier direction Est seulement;;;60;18-11-22 14:36;18-11-22 14:37
+Controleur;Termine;Laurier/Hopital CHUL (Laurier);106644;Vider Laurier a la tete des ponts;;;50;18-11-22 14:25;18-11-22 14:26
+Controleur;Critique;Laurier/Lavigerie;106643;Vider Laurier direction Est seulement;;;130;18-11-22 14:08;18-11-22 14:12
+Controleur;Termine;Laurier/Lavigerie;106642;Vider Laurier direction Ouest seulement;;;130;18-11-22 13:49;18-11-22 13:51
+Controleur;Termine;Laurier/Robert-Bourassa;106641;Vider Laurier direction ouest vers Robert-Bourassa;;;45;18-11-22 13:44;18-11-22 13:45
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106640;I-1004  Vider la cote St-Sacrement (V-2);;;70;18-11-22 13:21;18-11-22 13:23
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106639;I-1005  Liberer la cote St-Sacrement;;;240;18-11-22 12:11;18-11-22 12:15
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106638;I-1005  Liberer la cote St-Sacrement;;;360;18-11-22 12:01;18-11-22 12:07
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106637;I-1004  Vider la cote St-Sacrement (V-2);;;30;18-11-22 11:33;18-11-22 11:34
+Controleur;Termine;Honore-Mercier/Abraham;106636;Vider Cote d'Abraham;;;120;18-11-22 09:23;18-11-22 09:25
+Controleur;Termine;Honore-Mercier/Abraham;106635;Vider Cote d'Abraham;;;90;18-11-22 09:15;18-11-22 09:17
+Controleur;Termine;Honore-Mercier/Abraham;106634;Vider Cote d'Abraham;;;120;18-11-22 09:11;18-11-22 09:13
+Controleur;Termine;Honore-Mercier/Abraham;106633;Vider Cote d'Abraham;;;120;18-11-22 09:06;18-11-22 09:08
+Controleur;Termine;Honore-Mercier/Abraham;106632;Vider Cote d'Abraham;;;120;18-11-22 09:01;18-11-22 09:03
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106631;Vider la cote Saint-Sacrement vers le sud;;;30;18-11-22 08:56;18-11-22 08:56
+Controleur;Termine;Honore-Mercier/Abraham;106630;Vider Cote d'Abraham;;;120;18-11-22 08:55;18-11-22 08:57
+Controleur;Termine;Honore-Mercier/Abraham;106629;Vider Dufferin vers d'Youville;;;120;18-11-22 08:50;18-11-22 08:52
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106628;I-1005  Liberer la cote St-Sacrement;;;390;18-11-22 08:49;18-11-22 08:56
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106627;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 08:47;18-11-22 08:49
+Controleur;Termine;Honore-Mercier/Abraham;106626;Vider Cote d'Abraham;;;60;18-11-22 08:47;18-11-22 08:48
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106625;Vider la cote Saint-Sacrement vers le sud;;;30;18-11-22 08:44;18-11-22 08:44
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106624;Vider la cote Saint-Sacrement vers le sud;;;30;18-11-22 08:32;18-11-22 08:32
+Controleur;Termine;Honore-Mercier/Abraham;106623;Vider Cote d'Abraham;;;60;18-11-22 08:29;18-11-22 08:30
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106622;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 08:25;18-11-22 08:27
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106621;Vider la cote Saint-Sacrement vers le sud;;;30;18-11-22 08:20;18-11-22 08:20
+Controleur;Termine;Honore-Mercier/Abraham;106620;Vider Cote d'Abraham;;;60;18-11-22 08:19;18-11-22 08:20
+Controleur;Termine;Honore-Mercier/Abraham;106619;Vider Dufferin vers d'Youville;;;120;18-11-22 08:14;18-11-22 08:16
+Controleur;Termine;Honore-Mercier/Abraham;106618;Vider Cote d'Abraham;;;60;18-11-22 08:11;18-11-22 08:12
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106617;I-1005  Liberer la cote St-Sacrement;;;390;18-11-22 08:06;18-11-22 08:13
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106616;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 08:01;18-11-22 08:04
+Controleur;Termine;Honore-Mercier/Abraham;106615;Vider Dufferin;;;120;18-11-22 08:00;18-11-22 08:02
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106614;I-1005  Liberer la cote St-Sacrement;;;390;18-11-22 07:57;18-11-22 08:04
+Controleur;Termine;Charest Ouest/Marie-de-l'Incarnation;106613;Vider Charest-O;;;60;18-11-22 07:56;18-11-22 07:57
+Controleur;Termine;Charest Est/Couronne;106612;Vider Charest-E;;;60;18-11-22 07:56;18-11-22 07:57
+Controleur;Termine;Honore-Mercier/Abraham;106611;Vider Cote d'Abraham;;;60;18-11-22 07:51;18-11-22 07:52
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106610;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 07:46;18-11-22 07:48
+Controleur;Termine;Charest Ouest/Saint-Sacrement;106609;I-1005  Liberer la cote St-Sacrement;;;390;18-11-22 07:44;18-11-22 07:51
+Controleur;Termine;Honore-Mercier/Abraham;106608;Vider Dufferin;;;100;18-11-22 07:42;18-11-22 07:44
+Controleur;Termine;Capucins/Papier White Birch;106607;Vider la Bretelle;;;120;18-11-22 07:40;18-11-22 07:42
+Controleur;Termine;Sainte-Foy/Saint-Sacrement;106606;Vider la cote Saint-Sacrement vers le sud;;;30;18-11-22 07:38;18-11-22 07:38
+Controleur;Termine;Honore-Mercier/Abraham;106605;Vider Cote d'Abraham;;;60;18-11-22 07:35;18-11-22 07:36
+Controleur;Termine;Charest Est/Couronne;106604;Vider Charest-E;;;60;18-11-22 07:24;18-11-22 07:25
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106603;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 07:22;18-11-22 07:25
+Controleur;Termine;Honore-Mercier/Abraham;106602;Vider Dufferin;;;120;18-11-22 07:18;18-11-22 07:20
+Controleur;Termine;Honore-Mercier/Abraham;106601;Vider Cote d'Abraham;;;60;18-11-22 07:11;18-11-22 07:12
+Controleur;Termine;Lebourgneuf/Robert-Bourassa;106600;Vider App. Nord  Lebourgneuf / Robert-Bourassa;;;130;18-11-22 07:05;18-11-22 07:07
+Controleur;Termine;Honore-Mercier/Abraham;106599;Vider Dufferin;;;60;18-11-22 07:04;18-11-22 07:05

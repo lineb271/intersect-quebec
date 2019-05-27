@@ -1,0 +1,384 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Intersect Corp</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="{%static 'vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{%static 'css/resume.min.css'%}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Intersect Corp</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{%static 'img/profile.jpg'%}" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#A propos">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Carte Interactive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Formulaire">Formulaire</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="A propos">
+      <div class="w-100">
+        <h1 class="mb-0">Intersect
+          <span class="text-primary">Corp</span>
+        </h1>
+        <div class="subheading mb-5">École Polytechnique de Montréal
+          <a href="mailto:name@email.com">Quatuor de choc</a>
+        </div>
+        <p class="lead mb-5">Intersect est un outil mutiplateforme mis à la disposition des usagers de la route de la ville de Québec pour transmettre de l'information en temps réel sur les interventions appliqués aux feux de circulation. Intersect a trois outils : 
+          <br>
+          <br>
+          1) Une carte interactive permettant de géolocaliser les intersections ayant une intervention en cours
+          <br>
+          2) Un système d'alerte pour les interventions en cours selon la géolocalisation de l'utilisateur
+          <br>
+          3) Un gestionnaire de plaintes détaillées informatisé
+          <br>
+        <br>Bonne route ! N'oubliez pas votre ceinture de sécurité ! </p>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Carte Intéractive</h2>
+
+        <head>
+        <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+        </style>
+        </head>
+        <body>
+
+       <style>
+
+        #map-canvas {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            float: left;
+            border: thin solid #333;
+        }
+
+    </style>
+
+<div id="map-canvas"></div>
+
+       <div>
+           {% if intersectionPlusProche %}
+               <br>
+           <p>L'intersection la plus proche et ayant une intervention en cours est affichée sur la carte avec le symbole avec la flèche. <br>
+               Longitude: {{ intersectionPlusProche.longitude }} <br>
+               Latitude: {{ intersectionPlusProche.latitude }}<br></p>
+
+           {% endif %}
+           {% if action %}
+
+               <p>L'intervention en cours sera effectuée pendant {{ action.duration }} secondes </p>
+
+           {% endif %}
+       </div>
+       <div>
+
+           <li><a href="/vote">Mauvaise intersection</a></li>
+       </div>
+
+       <div>
+
+           {% if intersectionPlusProche %}
+               <div id="intersectionPlusProche" style="display: none;">
+                       <lu>
+                           <li>{{ intersectionPlusProche.longitude }}:{{ intersectionPlusProche.latitude }}</li>
+                       </lu>
+                       {% comment %}<li id="longitudeIntersection" style="display: none;">{{ intersection.longitude }}</li>
+                       <li id="latitudeIntersection" style="display: none;">{{ intersection.latitude }}</li>{% endcomment %}
+               </div>
+           {% else %}
+               <p>No intersections are available.</p>
+           {% endif %}
+       </div>
+
+
+       <div>
+
+
+
+           {% if intersectionList %}
+               <div id="intersections" style="display: none;">
+                   {% for intersection in intersectionList %}
+                       <lu>
+                           <li>{{ intersection.longitude }}:{{ intersection.latitude }}</li>
+                       </lu>
+                       {% comment %}<li id="longitudeIntersection" style="display: none;">{{ intersection.longitude }}</li>
+                       <li id="latitudeIntersection" style="display: none;">{{ intersection.latitude }}</li>{% endcomment %}
+                   {% endfor %}
+               </div>
+           {% else %}
+               <p>No intersections are available.</p>
+           {% endif %}
+
+
+
+
+       </div>
+<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.23.0.js"></script>
+
+
+<script>
+    window.lat = 46.867444;
+    window.lng = -71.238633;
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(updatePosition);
+        }
+        return null;
+    };
+    function updatePosition(position) {
+        if (position) {
+            window.lat = position.coords.latitude;
+            window.lng = position.coords.longitude;
+        }
+    }
+    setInterval(function(){updatePosition(getLocation());}, 10000);
+    function currentLocation() {
+        return {lat:window.lat, lng:window.lng};
+    };
+
+    var map;
+    var mark;
+
+    var initialize = function() {
+        map  = new google.maps.Map(document.getElementById('map-canvas'), {center:{lat:lat,lng:lng},zoom:15});
+        mark = new google.maps.Marker({position:{lat:lat, lng:lng}, map:map});
+
+        //latitude = parseFloat(document.getElementById('latitudeIntersection').textContent);
+        //longitude = parseFloat(document.getElementById('longitudeIntersection').textContent);
+
+
+        /*intersectionMark = new google.maps.Marker({position:{lat:everyIntersection[i].value.latitude,
+                lng:everyIntersection[i].value.value.longitude},
+            icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 10
+            },
+            map:map});*/
+
+
+
+    };
+    window.initialize = initialize;
+
+    var redraw = function(payload) {
+        lat = payload.message.lat;
+        lng = payload.message.lng;
+        map.setCenter({lat:lat, lng:lng, alt:0});
+        mark.setPosition({lat:lat, lng:lng, alt:0});
+
+
+        //intersectionMark.setPosition({lat:latitude, lng:longitude, alt:0});
+        //latitude = parseFloat(document.getElementById('latitudeIntersection').textContent);
+        //longitude = parseFloat(document.getElementById('longitudeIntersection').textContent);
+
+        intersections = document.getElementById('intersections').childNodes;
+
+        //document.write(intersections[27].textContent);
+
+
+
+        for (i = 1; i < intersections.length; ) {
+            longitude = parseFloat(intersections[i].textContent.split(":")[0]);
+            latitude = parseFloat(intersections[i].textContent.split(":")[1]);
+            intersectionMark = new google.maps.Marker({position:{lat:latitude,
+                    lng:longitude},
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 5
+                },
+                map:map});
+            intersectionMark.setPosition({lat:latitude, lng:longitude, alt:0})
+            i=i+2;
+        }
+
+        intersectionProche = document.getElementById('intersectionPlusProche').childNodes;
+        longitudeProche = parseFloat(intersectionProche[1].textContent.split(":")[0]);
+        latitudeProche = parseFloat(intersectionProche[1].textContent.split(":")[1]);
+        intersectionProcheMark = new google.maps.Marker({position:{lat:latitudeProche,
+                lng:longitudeProche},
+            icon: {
+                color: "#FF0000",
+                path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+                scale: 9
+            },
+            map:map});
+        intersectionProcheMark.setPosition({lat:latitudeProche, lng:longitudeProche, alt:0})
+
+        /*intersections = document.getElementById('intersections').childNodes;
+        longitude = parseFloat(intersections[1].textContent.split(":")[0]);
+        //document.write(longitude);
+        latitude = parseFloat(intersections[1].textContent.split(":")[1]);
+        //document.write(parseFloat(latitude));
+        intersectionMark = new google.maps.Marker({position:{lat:latitude,
+                lng:longitude},
+            icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                scale: 5
+            },
+            map:map});*/
+
+
+
+        //intersectionMark.setPosition({lat:latitude, lng:longitude, alt:0})
+
+    };
+
+    var pnChannel = "intersect";
+    var pubnub = new PubNub({
+        publishKey:   'pub-c-b47ad473-a2bf-4b82-adf2-31e4f4350570',
+        subscribeKey: 'sub-c-b9f662f8-5a31-11e9-94f2-3600c194fb1c'
+    });
+    pubnub.subscribe({channels: [pnChannel]});
+    pubnub.addListener({message:redraw});
+
+    setInterval(function() {
+        pubnub.publish({channel:pnChannel, message:currentLocation()});
+    }, 5000);
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA21PS0CKIVPjiAjZQrCYh3YuIvzXOaPt8&callback=initialize"></script>
+
+
+<h3 style="text-align:center">Note-moi</h3>
+
+<div class="color-box" style="text-align:center">
+
+<p style="text-align:center"> Est-ce que le temps d'attente au feu est acceptable ?</p>
+<form action="">
+  <button style="font-size:24px"><i class="fa fa-thumbs-up"></i></button>
+  <button style="font-size:24px"><i class="fa fa-thumbs-down"></i></button>
+</form>
+
+</div>
+
+</body>
+
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Formulaire">
+      <div class="w-100">
+        <h2 class="mb-5">Formulaire de plainte détaillé</h2>
+          <p class="lead mb-5"> Veuillez remplir les champs ci-dessous pour formuler une plainte. Assurez-vous de bien indiquer l'intersection problématique. 
+
+          </p>
+        <!--<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">University of Colorado Boulder</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Computer Science - Web Development Track</div>
+            <p>GPA: 3.23</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2006 - May 2010</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">James Buchanan High School</h3>
+            <div class="subheading mb-3">Technology Magnet Program</div>
+            <p>GPA: 3.56</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2002 - May 2006</span>
+          </div>
+        </div>-->
+
+        <div>
+
+			<form action="">
+				<!--<span>
+					Formulaire de plainte détaillée
+				</span>-->
+        <div>
+          Objet : <input size="83" type="text" name="title" placeholder="Sujet de la plainte">
+        </div>
+        <br>
+				<div>
+					Votre adresse courriel : <input size="70" type="text" name="email" >
+				</div>
+        <br>
+				<div>
+					<textarea rows="10" cols="100" name="message" placeholder="Votre message en 500 caractères maximum"></textarea>
+				</div>
+
+				<div>
+					<button>
+						<input type="submit" value="Envoyer le formulaire">
+					</button>
+				</div>
+			</form>
+		</div>
+
+      </div>
+    </section>
+
+    
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{%static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{%static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{%static 'vendor/jquery-easing/jquery.easing.min.js'%}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{%static 'js/resume.min.js'%}"></script>
+
+</body>
+
+</html>
