@@ -7,6 +7,6 @@ Our multiplatfom web application makes room for an user by allowing this last to
 
 Intersect is therefore no longer a tool for road user, it becomes then a tool for road managers to better detect traffic lights incidents.
 
-As you will be able to si in our files, our method lays on a live geolocation of a user and a simple interface that allows the driver to quicky report an incident. A more accurate comment can be made when the driver is no longer in motion. 
+As you will be able to see in our files, our method lays on a live geolocation of a user and a simple interface that allows the driver to quicky report an incident. A more accurate comment can be made when the driver is no longer in motion. 
 
 Our project won the first price of 'Concours mordus du transport' organized by AQTR(Association Quebecoise des Transports) in April 2019. 
